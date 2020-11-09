@@ -1,0 +1,14 @@
+{
+    "name": "lewis15520/lararoles",
+    "description": "A roles and permissions system for laravel",
+    "type": "package",
+    "license": "mit",
+    "authors": [
+        {
+            "name": "Lewis Hayter",
+            "email": "Lewis15520@users.noreply.github.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
