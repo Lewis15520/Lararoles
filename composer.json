@@ -10,5 +10,20 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {}
+    "require": {
+        "laravel/framework": "^8.12"
+    },
+    "autoload": {
+        "psr-4": {
+            "Lewis15520\\Lararoles\\": "src/",
+            "Lewis15520\\Lararoles\\Traits\\": "src/app/Traits/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Lewis15520\\Lararoles\\app\\Providers\\LararolesServiceProvider"
+            ]
+        }
+    }
 }
