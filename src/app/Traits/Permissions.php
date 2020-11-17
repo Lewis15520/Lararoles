@@ -15,7 +15,6 @@ Trait Permissions
                 $permissions[] = $permission;
             }
         }
-
         foreach ($permissions as $permission) {
             if ($permission->name === $name)
                 return true;
@@ -23,9 +22,16 @@ Trait Permissions
         return false;
     }
 
-    public function hasPermissions()
+    public function hasPermissions(array $names, bool $requireAll = false): bool
     {
-
+        $permissionsFound = [];
+        foreach ($names as $name) {
+            if ($this->hasPermission($name))
+                $permissionsFound[] = $name;
+        }
+        if ((! $requireAll && count($permissionsFound) > 0) || ($requireAll && count($names) === count($permissionsFound)))
+            return true;
+        return false;
     }
 
 }
