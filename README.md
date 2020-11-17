@@ -23,6 +23,6 @@ Anywhere around the application where you have a user object (including from the
 
 - hasRoles: Usage "```$user->hasRoles(['role1Name', 'role2Name'], (optional) $requireAll = false);```" | Definition "This will check if atleast one of the roles given is attached to the user, unless the ```$requireAll``` variable is set to ```true```, then it will only pass if all the roles are attached to the user."
 
-- hasPermission: Usage "```$user->hasPermission('permissionName';```" | Definition "This will check for a singular permission attached to this user through their attached roles."
+- hasPermission: Usage "```$user->hasPermission('permissionName');```" | Definition "This will check for a singular permission attached to this user through their attached roles."
 
 - hasPermissions: Usage "```$user->hasPermissions(['permission1Name', 'permission2Name'], (optional) $requireAll = false);```" | Definition "This will check if atleast one of the permissions given is attached to one of the roles that the user is assigned to, unless the ```$requireAll``` variable is set to ```true```, then it will only pass if all the permissions are associated."
